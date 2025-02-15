@@ -1,0 +1,14 @@
+[workspace]
+
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.dependencies]
+card = { path = "crates/card" }
+i18n = { path = "crates/i18n" }
+player = { path = "crates/player" }
+rules = { path = "crates/rules" }
+table = { path = "crates/table" }
+
+serde = { version = "1", features = ["derive"] }
+uuid = "1.11"
